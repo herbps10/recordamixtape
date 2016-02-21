@@ -1,0 +1,305 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang=""> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+        <style>
+            body {
+                padding-bottom: 20px;
+                font-family: Open Sans;
+            }
+
+            .jumbotron {
+              /* orange #d35400*/
+              background: #FAF5EF url('img/banner.jpg') no-repeat top right;
+            }
+
+            .jumbotron h1 {
+              font-family: Pacifico, sans-serif;
+            }
+        </style>
+        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="css/main.css">
+
+        <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+    </head>
+    <body>
+
+    <!--[if lt IE 8]>
+        <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+    
+
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+    <div class="jumbotron">
+      <div class="container">
+        <h1>Record a Mixtape</h1>
+        <p>Order a custom audio cassette mixtape with the music of your choice for $25.</p>
+      </div>
+    </div>
+
+    <div class="container">
+      <!-- Example row of columns -->
+      <div class='row'>
+        <div class='col-md-12'>
+          <h2>How it works</h2>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-4">
+          <h3>1. Build a killer playlist</h3>
+          <p>Put together a list of tunes for each side of the cassette tape, 45 minutes per side.
+        </div>
+        <div class="col-md-4">
+          <h3>2. Send it in</h3>
+          <p>Send in your playlist and we'll record it onto an audio cassette for you.</p>
+       </div>
+        <div class="col-md-4">
+          <h3>3. Receive your tape</h3>
+          <p>Your tape will be mailed to your door for your enjoyment!</p>
+        </div>
+      </div>
+
+      <hr />
+
+      <div class='row'>
+        <div class='col-md-6'>
+          <h2>Pricing</h2>
+          <p>Pricing is dead simple: <strong>$25</strong>, plus shipping, for a 90 minute cassette tape (45 minutes per side.)
+
+          <p>The package includes: one 90 minute audio cassette tape; a plastic tape holder; and a printed track list.</p>
+        </div>
+      </div>
+
+      <hr>
+
+      <div class='row'>
+        <div class='col-md-12'>
+          <h2>Submit an order</h2>
+        </div>
+      </div>
+
+      <div class='row'>
+        <div class='col-md-6'>
+          <p>Each order is reviewed manually to make sure the tape will turn out just right. We'll work with you to get your music and make sure it fits on the tape</p>
+
+          <p>Fill out the form below to submit an order. We'll be in touch to work out any details as necessary, and to coordinate payment.</p>
+
+          <br/>
+        </div>
+      </div>
+
+      <div class='row'>
+        <div class='col-md-12'>
+          <form action='/submit' type='post' class='form-horizontal'>
+            <fieldset>
+              <div class="form-group">
+                <label for="name" class='col-md-2 control-label'>Name</label>
+                <div class='col-md-10'>
+                  <input type="text" class="form-control" id="name" placeholder="Name">
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="email" class='col-md-2 control-label'>Email Address</label>
+                <div class='col-md-10'>
+                  <input type="email" class="form-control" id="email" placeholder="Email">
+                </div>
+              </div>
+
+              <div class='form-group'>
+                <label for='phone' class='col-md-2 control-label'>Phone Number (optional)</label>
+                <div class='col-md-10'>
+                  <input type='tel' class='form-control' id='phone' name='phone' placeholder='Phone' />
+                </div>
+              </div>
+            </fieldset>
+
+            <div class='row'>
+              <div class='col-md-10 col-md-offset-2'>
+                <hr />
+              </div>
+            </div>
+
+            <fieldset>
+              <div class='form-group'>
+                  <label for='address' class='col-md-2 control-label'>Mailing Address</label>
+                  <div class='col-md-10'>
+                    <input type='text' class='form-control' id='address1' name='address1' placeholder='Address line 1' /><br/>
+                    <input type='text' class='form-control' id='address2' name='address2' placeholder='Address line 2' /><br/>
+
+                    <input type='text' class='form-control' id='city' name='city' placeholder='City' /><br/>
+
+                    <select class='form-control'>
+                      <option value="AL">Alabama</option>
+                      <option value="AK">Alaska</option>
+                      <option value="AZ">Arizona</option>
+                      <option value="AR">Arkansas</option>
+                      <option value="CA">California</option>
+                      <option value="CO">Colorado</option>
+                      <option value="CT">Connecticut</option>
+                      <option value="DE">Delaware</option>
+                      <option value="DC">District Of Columbia</option>
+                      <option value="FL">Florida</option>
+                      <option value="GA">Georgia</option>
+                      <option value="HI">Hawaii</option>
+                      <option value="ID">Idaho</option>
+                      <option value="IL">Illinois</option>
+                      <option value="IN">Indiana</option>
+                      <option value="IA">Iowa</option>
+                      <option value="KS">Kansas</option>
+                      <option value="KY">Kentucky</option>
+                      <option value="LA">Louisiana</option>
+                      <option value="ME">Maine</option>
+                      <option value="MD">Maryland</option>
+                      <option value="MA">Massachusetts</option>
+                      <option value="MI">Michigan</option>
+                      <option value="MN">Minnesota</option>
+                      <option value="MS">Mississippi</option>
+                      <option value="MO">Missouri</option>
+                      <option value="MT">Montana</option>
+                      <option value="NE">Nebraska</option>
+                      <option value="NV">Nevada</option>
+                      <option value="NH">New Hampshire</option>
+                      <option value="NJ">New Jersey</option>
+                      <option value="NM">New Mexico</option>
+                      <option value="NY">New York</option>
+                      <option value="NC">North Carolina</option>
+                      <option value="ND">North Dakota</option>
+                      <option value="OH">Ohio</option>
+                      <option value="OK">Oklahoma</option>
+                      <option value="OR">Oregon</option>
+                      <option value="PA">Pennsylvania</option>
+                      <option value="RI">Rhode Island</option>
+                      <option value="SC">South Carolina</option>
+                      <option value="SD">South Dakota</option>
+                      <option value="TN">Tennessee</option>
+                      <option value="TX">Texas</option>
+                      <option value="UT">Utah</option>
+                      <option value="VT">Vermont</option>
+                      <option value="VA">Virginia</option>
+                      <option value="WA">Washington</option>
+                      <option value="WV">West Virginia</option>
+                      <option value="WI">Wisconsin</option>
+                      <option value="WY">Wyoming</option>
+                    </select><br/>
+
+                    <input type='text' name='zip' id='zip' placeholder='Zip Code' class='form-control' />
+                  </div>
+                </div>
+
+            </fieldset>
+
+            <div class='row'>
+              <div class='col-md-10 col-md-offset-2'>
+                <hr />
+              </div>
+            </div>
+
+            <fieldset>
+              <div class='form-group'>
+                <label for='tape-name' class='col-md-2 control-label'>Mixtape Name</label>
+                <div class='col-md-10'>
+                  <input type='text' class='form-control' id='tape-name' name='tape-name' placeholder='Awesome Mix Vol. 1' />
+                </div>
+              </div>
+
+              <div class='form-group'>
+                <label for='music' class='col-md-2 control-label'>Upload your music</label>
+                <div class='col-md-10'>
+                  <input type='file' id='music' name='music' />
+                  <p class='help-block'>Please provide your music as a ZIP file containing your songs.</p>
+                </div>
+              </div>
+
+              <div class='form-group'>
+                <label for='sidea' class='col-md-2 control-label'>Music for Side A</label>
+
+                <div class='col-md-10'>
+                  <textarea name='sidea' id='sidea' class='form-control' rows='8'>
+1. Hooked on a Feeling by Blue Swede
+2. Go All the Way by The Raspberries
+...
+                  </textarea>
+                  <p class='help-block'>List the artist and track name of each song you would like on Side A of your mixtape, in the order you would like them to appear.</p>
+                </div>
+              </div>
+
+              <div class='form-group'>
+                <label for='sideb' class='col-md-2 control-label'>Music for Side B</label>
+                <div class='col-md-10'>
+                  <textarea name='sideb' id='sideb' class='form-control' rows='8'>
+1. Come and Get Your Love by Redbone
+2. Cherry Bomb by The Runaways
+...
+                  </textarea>
+                  <p class='help-block'>List the artist and track name of each song you would like on Side B of your mixtape, in the order you would like them to appear.</p>
+                </div>
+              </div>
+            </fieldset>
+
+            <div class='row'>
+              <div class='col-md-10 col-md-offset-2'>
+                <hr />
+              </div>
+            </div>
+
+            <fieldset>
+              <div class='form-group'>
+                <div class='col-md-6 col-md-offset-2'>
+                  <p>Once we've verified that we can load your music and that it fits onto the tape, we'll contact you about receiving payment and where to ship the tape. Our preferred method of payment is PayPal.</p>
+
+                  <input type='submit' value='Submit' class='btn btn-default' />
+                </div>
+              </div>
+            </fieldset>
+          </form>
+        </div>
+      </div>
+
+      <br/><br/>
+
+      <div class='row'>
+        <div class='col-md-6'>
+          <h2>Contact Us</h2>
+
+          <p>We are based on Somerville, Masachusetts. Feel free to contact us at <a href='mailto:info@recordamixtape.com'>info@recordamixtape.com</a> or by mail at:</p>
+
+          <p>
+            Record A Mixtape<br/>
+            62 Myrtle Street #1<br/>
+            Somerville, MA 02145
+          </p>
+        </div>
+      </div>
+
+    </div> <!-- /container -->        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+
+        <script src="js/vendor/bootstrap.min.js"></script>
+
+        <script src="js/main.js"></script>
+
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='//www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-XXXXX-X','auto');ga('send','pageview');
+        </script>
+    </body>
+</html>
